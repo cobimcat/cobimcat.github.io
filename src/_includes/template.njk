@@ -12,30 +12,38 @@
     <nav>
       <button class="menu-toggle">☰</button>
       <ul id="menu">
-        <li><a href="/">Inci</a></li>
         <li class="submenu">
-          <a href="#">Qui sóm?</a>
+          <a href="/qui_som">Qui sóm?</a>
           <ul>
-            <li><a href="/features">Activitat</a></li>
-            <li><a href="#">Grup de treball 1</a></li>
-            <li><a href="#">Grup de treball 2</a></li>
+            <li><a href="/conveni">Conveni</a></li>
+            <li><a href="/membres">Membres</a></li>
           </ul>
         </li>
         <li class="submenu">
-          <a href="#">Membres</a>
+          <a href="#">Activitat</a>
           <ul>
-            <li><a href="/install">Install</a></li>
-            <li><a href="/configuration">Configuration</a></li>
+            <li><a href="/grups_de_treball">Grups de treball</a></li>
+            <li><a href="/gt-1">Grup de treball 1</a></li>
+            <li><a href="/gt-2">Grup de treball 2</a></li>
+            <li><a href="/gt-3">Grup de treball 3</a></li>
           </ul>
         </li>
-        <li><a href="/">Contacto</a></li>
+        <li class="submenu">
+          <a href="#">Documentació</a>
+          <ul>
+            <li><a href="#">Psets</a></li>
+            <li><a href="#">Geolocalització</a></li>
+          </ul>
+        </li>
+        <li><a href="/eines">Eines</a></li>
+        <li><a href="/contacte">Contacte</a></li>
       </ul>
     </nav>
   </header>
 
   <div class="content">
     <main>
-      <div>{{ page.url}}</div>
+      <div>{{ page.url }}</div>
 
       {{ content | safe }}
     </main>
